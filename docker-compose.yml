@@ -1,0 +1,8 @@
+services:
+  localtunnel:
+    image: node:latest
+    container_name: localtunnel
+    volumes:
+      - ./:/app
+    working_dir: /app
+    entrypoint: tail -f /dev/null
